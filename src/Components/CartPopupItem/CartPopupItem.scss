@@ -1,0 +1,51 @@
+@import "~bootstrap/scss/bootstrap";
+
+.CartPopupItem{
+    display: flex;
+    padding: 20px;
+    border-bottom: solid 1px #eee;
+    margin: 0 -1rem;
+    img{
+        height: 100px;
+        margin-right: 20px;
+    }
+    .desc{
+        h3{
+            line-height: 14px;
+            font-size: 16px;
+            color: #242b58;
+            text-decoration: none;
+        }
+        .input-group{
+            width: 65%;
+            float: left;
+            input:focus, .btn-outline-secondary:focus{
+                box-shadow: none;
+            }
+            .btn-outline-secondary{
+                background-color: #0a58ca;
+                border-color: #0a58ca;
+                color:#fff;
+                height: 30px;
+                width: 30px;
+                line-height: 12px;
+                padding: 0;
+            }
+            input{
+                height:30px;
+                text-align: center;
+                &::-webkit-inner-spin-button, &::-webkit-outer-spin-button{
+                    -webkit-appearance: none;
+                }
+            }
+        }
+        .remove-item{
+            float: right;
+            background: transparent;
+            border: 0;
+            text-decoration: underline;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+    }
+}

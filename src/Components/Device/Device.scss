@@ -1,0 +1,61 @@
+@import "~bootstrap/scss/bootstrap";
+
+.Device{
+    flex: 0 0 33.333333%;
+    text-align: center;
+    margin-bottom: 2rem;
+    img{
+        height: 200px;
+    }
+    h3{
+        margin: 10px;
+        a{
+            font-size: 16px;
+            color:#242b58;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    } 
+    label{
+        font-size: 14px;
+        display: block;
+        margin: 10px;
+    }
+    .input-group{
+        width: 120px;
+        margin: auto;
+        margin-bottom: 10px;
+        input:focus, .btn-outline-secondary:focus{
+            box-shadow: none;
+        }
+        .btn-outline-secondary{
+            background-color: #0a58ca;
+            border-color: #0a58ca;
+            color:#fff;
+            height: 30px;
+            width: 30px;
+            line-height: 12px;
+            padding: 0;
+        }
+        input{
+            height:30px;
+            text-align: center;
+            &::-webkit-inner-spin-button, &::-webkit-outer-spin-button{
+                -webkit-appearance: none;
+            }
+        }
+    }
+    button.primary-btn{
+        background: #f5801d;
+        border: 0;
+        border-radius: 30px;
+        height: 30px;
+        color: #fff;
+        padding: 0 15px;
+        font-size: 14px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
